@@ -3,7 +3,7 @@ $(document).ready(function () {
 
   // NAV
   $('.button-collapse').sideNav({
-    closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    closeOnClick: true,
   });
 
   $('#example-one').onePageNav({
@@ -39,10 +39,6 @@ $(document).ready(function () {
     }
   );
 
-  /**************************************************************************
-            Style demo
-    **************************************************************************/
-
   //Portfolio
   $('#portfolio-item').mixItUp();
 
@@ -54,9 +50,6 @@ $(document).ready(function () {
     var width = $(this).text();
     $(this).css('width', width).empty().append('<i class="fa fa-circle"></i>');
   });
-
-  //Conatct
-  $('select').material_select();
 
   // Smooth Scroll
   $(function () {
@@ -80,16 +73,6 @@ $(document).ready(function () {
           return false;
         }
       }
-    });
-  });
-
-  // Blog
-  jQuery(window).on('load', function () {
-    var $ = jQuery;
-    $('.blog').masonry({
-      itemSelector: '.blog-post',
-      columnWidth: '.blog-post',
-      percentPosition: true,
     });
   });
 

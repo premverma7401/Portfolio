@@ -1,78 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
-
-    <!-- TITLE OF SITE -->
     <title>Prem Sager | CV | Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="My Personal website just to showcase web version of my CV. " />
     <meta name="keywords" content="prem sager, auckland, software developer,cv, resume, portfolio" />
     <meta name="author" content="Prem Sager, Auckland" />
-
-    <!-- FAVICON -->
     <link rel="icon" href="assets/images/favicon.ico" />
     <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-icon-72x72.png" />
     <link rel="apple-touch-icon" sizes="76x76" href="assets/images/apple-icon-76x76.png" />
     <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-icon-114x114.png" />
-
-    <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:500,300,400" rel="stylesheet" type="text/css" />
-
-    <!-- FRAMEWORK CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css" />
-    <!--<link rel="stylesheet" href="css/lightbox.css">-->
-
-    <!-- FONT ICONS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-
-    <!-- ADDITIONAL CSS -->
     <link rel="stylesheet" href="assets/css/timeline.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/nav.css" />
     <link rel="stylesheet" href="assets/css/jquery.fancybox.css" />
-
-    <!--   COUSTOM CSS link  -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
-
-    <!--   COLOUR  -->
     <link rel="stylesheet" href="assets/css/color/lime.css" title="lime" />
-    <!-- Currently Usingthis color  -->
-    <!-- <link rel="stylesheet" href="assets/css/color/red.css" title="red"> -->
-    <!-- <link rel="stylesheet" href="assets/css/color/green.css" title="green"> -->
-    <!-- <link rel="stylesheet" href="assets/css/color/purple.css" title="purple"> -->
-    <!-- <link rel="stylesheet" href="assets/css/color/orange.css" title="orange">  -->
+   
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.3/jquery.sticky.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.0.3/wow.min.js"></script>
+    <script src="assets/js/init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.0/masonry.pkgd.min.js"></script>
+    <script src="assets/js/validator.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js"></script>
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+            
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+        </script>
 </head>
 
 <body>
-    <!-- =========================================
-                           HEADER TOP   
-        ==========================================-->
     <header id="header-top">
-        <!--Start: "Header Area"-->
         <div class="container">
             <div class="row">
-                <div class="top-contact col m12 s9">
-
+                <div class="top-contact col m12 s10">
                     <span>
                         <a href="https://www.facebook.com/" target="_blank"><i
                                 class="fa fa-facebook-official"></i></a></span>
                     <span>
-                        <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a></span>
+                        <a href="https://www.linkedin.com/in/prem-sager-verma/" target="_blank"><i class="fa fa-linkedin"></i></a></span>
                     <span>
-                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-whatsapp"></i></a></span>
-                    <span><i class="fa fa-phone"></i><a href="tel:">+64-027-511-3822</a></span>
-                    <span><i class="fa fa-envelope"></i><a href="mailto:">premsag@zoho.com</a></span>
+                        <a href="https://api.whatsapp.com/send?phone=640275113822&text=&source=&data=&app_absent=" target="_blank"><i class="fa fa-whatsapp"></i></a></span>
+                    <span>
+                        <a href="https://github.com/premverma7401/" target="_blank"><i class="fa fa-github"></i></a></span>
+                    <span>
+                        <span><i class="fa fa-phone"></i><a href="tel:">+64-027-511-3822</a></span>
+                        <span><i class="fa fa-envelope"></i><a href="mailto:">premsag@zoho.com</a></span>
                 </div>
             </div>
         </div>
-        <!-- =========================================
-                           NAVIGATION   
-            ==========================================-->
         <div id="header-bottom" class="z-depth-1">
-            <!--Start: "Header Area"-->
             <div id="sticky-nav">
                 <div class="container">
                     <div class="row">
@@ -84,6 +85,7 @@
                                 <li><a href="#works">Works</a></li>
                                 <li><a href="#portfolio">Portolio</a></li>
                                 <li><a href="#education">Education</a></li>
+                                <li><a href="#training">Training</a></li>
                                 <li><a href="#contact-form">Contact</a></li>
                             </ul>
                             <ul class="side-nav" id="slide-out">
@@ -93,6 +95,7 @@
                                 <li><a href="#works">Works</a></li>
                                 <li><a href="#portfolio">Portolio</a></li>
                                 <li><a href="#education">Education</a></li>
+                                <li><a href="#training">Training</a></li>
                                 <li><a href="#contact-form">Contact</a></li>
                             </ul>
                             <a href="#" data-activates="slide-out" class="button-collapse"><i
@@ -102,13 +105,7 @@
                 </div>
             </div>
         </div>
-        <!--End: Header Area-->
     </header>
-    <!--End: Header Area-->
-
-    <!-- =========================================
-                        ABOUT   
-        ==========================================-->
     <section id="about">
         <div class="container">
             <div class="row">
@@ -124,7 +121,7 @@
                             <span>Full Stack Developer</span>
                             <p>
                                 Hello everyone, My name is <strong>Prem Sager</strong>. I am a software
-                                developer from Auckland .<br /> I am highly focused and passionate software developer
+                                developer from Auckland .I am highly focused and passionate software developer
                                 with more than 3 years of
                                 experience in variety of development positions and projects. My primary goal is to
                                 apply my technical expertise all throughout the full software life cycle to ensure
@@ -140,10 +137,6 @@
             </div>
         </div>
     </section>
-
-    <!-- =========================================
-                           SKILLS   
-        ==========================================-->
     <section id="skills">
         <div class="container">
             <div class="row">
@@ -178,12 +171,9 @@
                                     <li>C#</li>
                                     <li>ASP .NET Core</li>
                                     <li>RESTful Web API</li>
-                                    <li>React</li>
                                 </ul>
-
                             </div>
                         </div>
-
                         <div class="col m3 s12">
                             <div class="col m2 skill-icon">
                                 <i class="fa fa-calendar-o"></i>
@@ -192,11 +182,8 @@
                                 <h3>Other Tools</h3>
                                 <ul>
                                     <li>Version Control :<br />Git , Azure DevOps Server</li>
-                                    <li>CSS</li>
-                                    <li>JavaScript</li>
-                                    <li>React</li>
+                                    <li>ORM :<br />EF Core, Dapper, ADO.NET</li>
                                 </ul>
-
                             </div>
                         </div>
                         <div class="col m3 s12">
@@ -217,153 +204,131 @@
                                     <a href="./assets/pdf/cliftonstrengths_all34_Prem.pdf" target="_blank">
                                         <li>......View Detailed</li>
                                     </a>
-
-
                                 </ul>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
         </div>
     </section>
-    <!-- ========================================
-                WORKS EXPERIENCE  
-        ==========================================-->
-    <section id="works">
-        <div class="container">
-            <div class="row">
-                <div class="section-title">
-                    <h2><i class="fa fa-suitcase"> </i>Work Experience</h2>
+    <section id="works">      <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2><i class="fa fa-suitcase"> </i>Work Experience</h2>
+            </div>
+            <div id="cd-timeline" class="cd-container">
+                <div class="cd-timeline-block wow fadeIn a2" data-wow-delay="0.2s">
+                    <div class="cd-timeline-img"></div>
+                    <div class="cd-timeline-content col m5 s12 z-depth-1">
+                        <a href="">
+                            <h2>Full Stack Developer @Freelancer</h2>
+                        </a>
+                        <span>Feb 2020 - Present </span>
+                        <p>
+                            Working on personal projects to put the most out of my learnings and some clients based
+                            in New Zealand.
+                            <br /> Currently working with latest technologies like:
+                        <ol>
+                            <li>
+                                Implimented Onion Architecture (Clean Architecture).
+                            </li>
+                            <li>
+                                Mediator with CQRS pattern.
+                            </li>
+                            <li>
+                                React Hooks and Context API.
+                            </li>
+                            <li>
+                                Dapper and EF Core for Persistence.
+                            </li>
+                        </ol>
+                        </p>
+                    </div>
                 </div>
-                <div id="cd-timeline" class="cd-container">
-                    <div class="cd-timeline-block wow fadeIn a2" data-wow-delay="0.2s">
-                        <div class="cd-timeline-img"></div>
-                        <!-- cd-timeline-img -->
-                        <div class="cd-timeline-content col m5 s12 z-depth-1">
-                            <a href="">
-                                <h2>Full Stack Developer @Freelancer</h2>
-                            </a>
-                            <span>Feb 2020 - Present </span>
-                            <p>
-                                Working on personal projects to put the most out of my learnings and some clients based
-                                in New Zealand.
-                                <br /> Currently working with latest technologies like:
-                            <ol>
-                                <li>
-                                    Implimented Onion Architecture (Clean Architecture).
-                                </li>
-                                <li>
-                                    Mediator with CQRS pattern.
-                                </li>
-                                <li>
-                                    React Hooks and Context API.
-                                </li>
-                                <li>
-                                    Dapper and EF Core for Persistence.
-                                </li>
-                            </ol>
-                            </p>
-                        </div>
-                        <!-- cd-timeline-content -->
+                <div class="cd-timeline-block wow fadeIn a3" data-wow-delay="0.3s">
+                    <div class="cd-timeline-img"></div>
+                    <div class="cd-timeline-content col m5 s12 z-depth-1">
+                        <a href="">
+                            <h2>Junior Developer @IF Else Cloud Ltd.</h2>
+                        </a>
+                        <span>Dec 2018 - Jan 2020 </span>
+                        <p>
+                            KYPECO, Cloudbase SAAS application which helps manufacturing plants to calculate there
+                            OEE and generate several real time reports.
+                            <br /> I was primariliy working with Web Development team with following
+                            responsibilites:
+                        </p>
+                        <ol>
+                            <li>
+                                Create Web API's using EFCore Code first approach.
+                            </li>
+                            <li>
+                                Consume API's in React application using React Hooks.
+                            </li>
+                            <li>
+                                Building reusable react components.
+                            </li>
+                            <li>
+                                Documentation using Confluence and Github. 
+                            </li>
+                            <li>
+                                Working with Postman and Fiddler to create Moke API's and validate the response.
+                            </li>
+                        </ol>
                     </div>
-                    <!-- cd-timeline-block -->
-                    <div class="cd-timeline-block wow fadeIn a3" data-wow-delay="0.3s">
-                        <div class="cd-timeline-img"></div>
-                        <!-- cd-timeline-img -->
-                        <div class="cd-timeline-content col m5 s12 z-depth-1">
-                            <a href="">
-                                <h2>Junior Developer @IF Else Cloud Ltd.</h2>
-                            </a>
-                            <span>Dec 2018 - Jan 2020 </span>
-                            <p>
-                                KYPECO, Cloudbase SAAS application which helps manufacturing plants to calculate there
-                                OEE and generate several real time reports.
-                                <br /> I was primariliy working with Web Development team with following
-                                responsibilites:
-                            </p>
-                            <ol>
-                                <li>
-                                    Create Web API's using EFCore Code first approach.
-                                </li>
-                                <li>
-                                    Consume API's in React application using React Hooks.
-                                </li>
-                                <li>
-                                    Building reusable react components.
-                                </li>
-                                <li>
-                                    Documentation using Confluence and Github. 
-                                </li>
-                                <li>
-                                    Working with Postman and Fiddler to create Moke API's and validate the response.
-                                </li>
-                            </ol>
-                        </div>
-                        <!-- cd-timeline-content -->
-                    </div>
-                    <!-- cd-timeline-block -->
-
-                    <div class="cd-timeline-block wow fadeIn a4" data-wow-delay="0.4s">
-                        <div class="cd-timeline-img"></div>
-                        <!-- cd-timeline-img -->
-                        <div class="cd-timeline-content col m5 s12 z-depth-1">
-                            <a href="">
-                                <h2>Junior Developer @Firstec Ltd.</h2>
-                            </a>
-                            <span>Mar 2017 - Feb 2018 </span>
-                            <p>
-                                KMS, Kura Management System's main idea was to make customized learning plans for
-                                individual students.
-                                Along with various reporting patterns, which then helps to track there
-                                performances.<br />
-                                My main role with development team was:
-                            </p>
-                            <ol>
-                                <li>
-                                    Working with Material UI, AngularJs (1.5x) and pure CSS.
-                                </li>
-                                <li>
-                                    Creating UI components from wireframes (I am famillier with Sketch and Adobe XD). 
-                                </li>
-                                <li>
-                                    Writing Store procedures and SQL queries using Respository pattern.
-                                </li>
-                                <li>
-                                    EF Database first approach to create Restful API's.
-                                </li>
-                                <li>
-                                    Documentation, both technical and end user manual using Github.
-                                </li>
-                            </ol>
-                        </div>
-                        <!-- cd-timeline-content -->
-                    </div>
-
-                    <!-- cd-timeline-block -->
                 </div>
-                <!-- cd-timeline -->
+                <div class="cd-timeline-block wow fadeIn a4" data-wow-delay="0.4s">
+                    <div class="cd-timeline-img"></div>
+                    <div class="cd-timeline-content col m5 s12 z-depth-1">
+                        <a href="">
+                            <h2>Junior Developer @Firstec Ltd.</h2>
+                        </a>
+                        <span>Mar 2017 - Feb 2018 </span>
+                        <p>
+                            KMS, Kura Management System's main idea was to make customized learning plans for
+                            individual students.
+                            Along with various reporting patterns, which then helps to track there
+                            performances.<br />
+                            My main role with development team was:
+                        </p>
+                        <ol>
+                            <li>
+                                Working with Material UI, AngularJs (1.5x) and pure CSS.
+                            </li>
+                            <li>
+                                Creating UI components from wireframes (I am famillier with Sketch and Adobe XD). 
+                            </li>
+                            <li>
+                                Writing Store procedures and SQL queries using Respository pattern.
+                            </li>
+                            <li>
+                                EF Database first approach to create Restful API's.
+                            </li>
+                            <li>
+                                Documentation, both technical and end user manual using Github.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
-    <section id="portfolio">
+    </div>
+</section>
+     <section id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="section-title wow fadeIn a1" data-wow-delay="0.1s">
                     <h2><i class="fa fa-th-list"></i>Portfolio</h2>
                 </div>
-
                 <div id="loader">
                     <div class="loader-icon"></div>
                 </div>
                 <div class="screenshots" id="portfolio-item">
                     <div class="row">
                         <ul class="grid">
-                            <!-- Portfolio one-->
-                            <li class="col m3 s12 mix category-1">
+                            <li class="col m3 s12 ">
                                 <a href="project.html" class="sa-view-project-detail" data-action="#project-one">
                                     <figure class="more">
                                         <img src="assets/images/port-1.jpg" alt="Screenshot 01" />
@@ -381,8 +346,7 @@
                                     </figure>
                                 </a>
                             </li>
-                            <!-- Portfolio two-->
-                            <li class="col m3 s12 mix category-2">
+                            <li class="col m3 s12">
                                 <a href="project.html" class="sa-view-project-detail" data-action="#project-two">
                                     <figure class="more">
                                         <img src="assets/images/p-1.jpg" alt="Screenshot 01" />
@@ -400,8 +364,7 @@
                                     </figure>
                                 </a>
                             </li>
-                            <!-- Portfolio three-->
-                            <li class="col m3 s12 mix category-1">
+                            <li class="col m3 s12 ">
                                 <a href="project.html" class="sa-view-project-detail" data-action="#project-three">
                                     <figure class="more">
                                         <img src="assets/images/p-1.jpg" alt="Screenshot 01" />
@@ -419,8 +382,7 @@
                                     </figure>
                                 </a>
                             </li>
-                            <!-- Portfolio four-->
-                            <li class="col m3 s12 mix category-2">
+                            <li class="col m3 s12 ">
                                 <a href="project.html" class="sa-view-project-detail" data-action="#project-four">
                                     <figure class="more">
                                         <img src="assets/images/p-1.jpg" alt="Screenshot 01" />
@@ -438,12 +400,9 @@
                                     </figure>
                                 </a>
                             </li>
-
                         </ul>
                     </div>
                 </div>
-
-                <!-- PROJECT DETAILS WILL BE LOADED HERE -->
                 <div class="sa-project-gallery-view" id="project-gallery-view"></div>
                 <div class="back-btn col s12">
                     <a id="back-button" class="btn btn-info waves-effect" href="#"><i class="fa fa-long-arrow-left"></i>
@@ -453,22 +412,15 @@
             </div>
         </div>
     </section>
-
-    <!-- =========================================
-                EDUCATION  
-        ==========================================-->
-
     <section id="education">
         <div class="container">
             <div class="row">
                 <div class="section-title wow fadeIn a1" data-wow-delay="0.1s">
                     <h2><i class="fa fa-graduation-cap"></i>Education</h2>
                 </div>
-
                 <div class="cd-container" id="ed-timeline">
                     <div class="cd-timeline-block wow fadeIn a2" data-wow-delay="0.4s">
                         <div class="cd-timeline-img"></div>
-                        <!-- cd-timeline-img -->
                         <div class="cd-timeline-content col m5 s12 z-depth-1">
                             <div class="row">
                                 <div class="col m12 s12">
@@ -478,13 +430,12 @@
                                 </div>
                                 <div class="col m6 s6 section">
                                     <a href="https://aspire2international.ac.nz/" target="_blank"> <span>Aspire2
-                                            International </span>
+                                            International </span><br />
                                     </a> <span>Auckland, NZ</span>
                                 </div>
                                 <div class="col m6 s6">
                                     <span>Dec 2015- Mar 2017</span>
                                 </div>
-
                             </div>
                             <div class="section">
                                 Successfully completed my Level 7 from Aspire2 International with 2 Minor projects and 1
@@ -494,25 +445,23 @@
                             <li>Strategic implementation of Information Systems</li>
                             <li>IT Project Management</li>
                             <li>Programming in C# </li>
-                        <div class="section">
-                            However during my Internship<p id="dots"></p>
-                            <div id="more" >
-                               , I Worked with AGILE methodology, creating web services using AZURE portal,
-                                familiarity of Azure Components- Application Insights, creating project charter and
-                                Giant charts. <br />
-                                Also tested number of projects as assignments in Selenium tool.
-                                The focus of my course surrounds around JavaScript frameworks especially
-                                AngularJS and its integration.
+                            <div class="section">
+                                However during my Internship<p id="dots"></p>
+                                <div id="more">
+                                    , I Worked with AGILE methodology, creating web services using AZURE portal,
+                                    familiarity of Azure Components- Application Insights, creating project charter and
+                                    Giant charts. <br />
+                                    Also tested number of projects as assignments in Selenium tool.
+                                    The focus of my course surrounds around JavaScript frameworks especially
+                                    AngularJS and its integration.
+                                </div>
+                                <button onclick="myFunction()" class="right btn-small" id="myBtn">Read more</button>
                             </div>
-                            <button onclick="myFunction()" class="right btn-small" id="myBtn">Read more</button>
-                        </div>
 
                         </div>
-                        <!-- cd-timeline-content -->
                     </div>
                     <div class="cd-timeline-block wow fadeIn a3" data-wow-delay="0.4s">
                         <div class="cd-timeline-img"></div>
-                        <!-- cd-timeline-img -->
                         <div class="cd-timeline-content col m5 s12 z-depth-1">
                             <div class="row">
                                 <div class="col m12 s12">
@@ -530,16 +479,15 @@
                             </div>
                             <div class="section">
                                 My study cum work experience during my earlier studies, polish my skills in
-                               <strong> C# .NET and ASP .NET</strong> along with different <strong>Data Servers like MS SQL Server, MS
-                                Access etc.</strong>
+                                <strong> C# .NET and ASP .NET</strong> along with different <strong>Data Servers like MS
+                                    SQL Server, MS
+                                    Access etc.</strong>
 
                             </div>
                         </div>
-                        <!-- cd-timeline-content -->
                     </div>
                     <div class="cd-timeline-block wow fadeIn a4" data-wow-delay="0.4s">
                         <div class="cd-timeline-img"></div>
-                        <!-- cd-timeline-img -->
                         <div class="cd-timeline-content col m5 s12 z-depth-1">
                             <div class="row">
                                 <div class="col m12 s12">
@@ -555,7 +503,6 @@
                                 <div class="col m6 s6">
                                     <span>Jun 2010- Dec 2013</span>
                                 </div>
-
                             </div>
                             <div>
                                 <li>
@@ -567,18 +514,11 @@
 
                             </div>
                         </div>
-                        <!-- cd-timeline-content -->
                     </div>
-
-                    <!-- cd-timeline-block -->
                 </div>
-                <!-- cd-timeline -->
             </div>
         </div>
     </section>
-    <!-- =========================================
-                Training 
-        ==========================================-->
     <section id="training">
         <div class="container">
             <div class="row">
@@ -600,14 +540,17 @@
                                     </div>
                                     <div class="post-details">
                                         <p>
-                                            Training from TIM, helped me a lot during my journey from learning basics of C# to implementing whole CRUD application via Console,MVC and Web API.
-                                   <br/>         Tim is a MVP and trained thousands of developer at different stages of their carriers. I strongly adhere his recommendations and best practices while developing apps.  </p>
+                                            Training from TIM, helped me a lot during my journey from learning basics of
+                                            C# to implementing whole CRUD application via Console,MVC and Web API.
+                                            <br />Tim is a MVP and trained thousands of developer at different stages of
+                                            their carriers. I strongly adhere his recommendations and best practices
+                                            while developing apps. </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col m4 s12 training-post wow fadeIn a3" data-wow-delay="0.3s">
-                            <div class="thumbnail z-depth-1">
+                            <div class="thumbnail z-depth-1 animated">
                                 <a href="https://programmingwithmosh.com/" target="_blank"><img
                                         src="assets/images/training2.jpg" alt="" class="responsive-img" /></a>
                                 <div class="training-details">
@@ -629,7 +572,7 @@
                             </div>
                         </div>
                         <div class="col m4 s12 training-post wow fadeIn a4" data-wow-delay="0.4s">
-                            <div class="thumbnail z-depth-1">
+                            <div class="thumbnail z-depth-1 animated">
                                 <a href="training-full-post.html"><img src="assets/images/b-1.jpg" alt=""
                                         class="responsive-img" /></a>
                                 <div class="training-details">
@@ -655,65 +598,6 @@
             </div>
         </div>
     </section>
-
-
-
-    <!-- =========================================
-                CLIENTS
-        ==========================================-->
-    <!-- <section id="clients">
-        <div class="container">
-            <div class="row">
-                <div class="section-title wow fadeIn a1" data-wow-delay="0.1s">
-                    <h2><i class="fa fa-quote-left"></i>Reference</h2>
-                </div>
-                <div class="clients-quates wow fadeIn a3" data-wow-delay="0.3s">
-                    <div class="row">
-                        <div class="quates col m4 s12">
-                            <div class="thumbnail z-depth-1">
-                                <img src="assets/images/team1.jpg" alt="" />
-                                <h3>Sandeep Verma</h3>
-                                <span>CEO, IF Else Cloud Ltd</span>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Aliquam ornare arcu ac velit ultricies fermentum. Aliquam
-                                    ornare arcu ac velit ultricies fermentum..
-                                </p>
-                            </div>
-                        </div>
-                        <div class="quates col m4 s12">
-                            <div class="thumbnail z-depth-1">
-                                <img src="assets/images/team1.jpg" alt="" />
-                                <h3>Jhon Adnan</h3>
-                                <span>CEO, Lorem Ipsum</span>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Aliquam ornare arcu ac velit ultricies fermentum.Aliquam
-                                    ornare arcu ac velit ultricies fermentum.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="quates col m4 s12">
-                            <div class="thumbnail z-depth-1">
-                                <img src="assets/images/team1.jpg" alt="" />
-                                <h3>Mark Anwar</h3>
-                                <span>CEO, Bdpark Market</span>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    Aliquam ornare arcu ac velit ultricies fermentum. Aliquam
-                                    ornare arcu ac velit ultricies fermentum.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section> -->
-    <!-- =========================================
-                CONTACT  
-        ==========================================-->
     <section id="contact-form">
         <div class="container">
             <div class="row">
@@ -750,42 +634,8 @@
                         </form>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </section>
-
-    <!-- SCRIPTS -->
-    <script>
-        function myFunction() {
-            var dots = document.getElementById("dots");
-            var moreText = document.getElementById("more");
-            var btnText = document.getElementById("myBtn");
-
-            if (dots.style.display === "none") {
-                dots.style.display = "inline";
-                btnText.innerHTML = "Read more";
-                moreText.style.display = "none";
-            } else {
-                dots.style.display = "none";
-                btnText.innerHTML = "Read less";
-                moreText.style.display = "inline";
-            }
-        }
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
-    <script src="assets/js/masonry.pkgd.js"></script>
-    <script src="assets/js/jquery.fancybox.pack.js"></script>
-    <script src="assets/js/validator.min.js"></script>
-    <script src="assets/js/jquery.nav.js"></script>
-    <script src="assets/js/modernizr.js"></script>
-    <script src="assets/js/jquery.sticky.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/init.js"></script>
 </body>
-
 </html>
-1
