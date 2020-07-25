@@ -7,7 +7,6 @@
 	$Subject = "New Message Received";
 	 
 	// prepare email body text
-	
 	$Body .= "Name: ";
 	$Body .= $name;
 	$Body .= "\n";
