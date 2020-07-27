@@ -380,6 +380,8 @@ nav .button-collapse i {
 #skills .str a {
   color: rgb(255, 238, 255);
   text-align: left;
+  font-size: smaller;
+  font-weight: 400;
 }
 #skills .skill-line .skill-bar span {
   margin-bottom: 10px;
