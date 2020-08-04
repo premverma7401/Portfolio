@@ -357,6 +357,23 @@
                     <div class="row">
                         <ul class="grid">
                             <li class="col m3 s12 ">
+                                <a href="project.html" class="sa-view-project-detail" data-action="#project-six">
+                                    <figure class="more">
+                                        <img src="assets/images/port-6.jpg" alt="Screenshot 01" />
+                                        <figcaption>
+                                            <div class="caption-content">
+                                                <div class="single_image">
+                                                    <h2>Covid19 Tracker</h2>
+                                                    <p>
+                                                        Realtime covid19 tracker with integrated charts and tabular data.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
+                            <li class="col m3 s12 ">
                                 <a href="project.html" class="sa-view-project-detail" data-action="#project-one">
                                     <figure class="more">
                                         <img src="assets/images/port-1.jpg" alt="Screenshot 01" />
@@ -412,7 +429,7 @@
                                 </a>
                             </li>
 
-                            <li class="col m3 s12 category-1 ">
+                            <li class="col m3 s12">
                                 <a href="project.html" class="sa-view-project-detail" data-action="#project-four">
                                     <figure class="more">
                                         <img src="assets/images/port-4.jpg" alt="Screenshot 01" />
@@ -430,8 +447,26 @@
                                     </figure>
                                 </a>
                             </li>
+                            <li class="col m3 s12">
+                                <a href="project.html" class="sa-view-project-detail" data-action="#project-five">
+                                    <figure class="more">
+                                        <img src="assets/images/port-5.jpg" alt="Screenshot 01" />
+                                        <figcaption>
+                                            <div class="caption-content">
+                                                <div class="single_image">
+                                                    <h2>Legal Auxilium</h2>
+                                                    <p>
+                                                        Community of legal scholars dedicated to provide legal awareness against domestic violence and harassment at the workplace.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </a>
+                            </li>
                         </ul>
                     </div>
+                 
                 </div>
                 <div class="sa-project-gallery-view" id="project-gallery-view"></div>
                 <div class="back-btn col s12">
@@ -642,27 +677,27 @@
                 </div>
                 <div class="contact-form z-depth-1" id="contact">
                     <div class="row">
-                        <form id="contactForm" d>
+                        <form id="contactForm" d action="https://formspree.io/mrgyjbwg" method="POST">
                             <div id="msgSubmit" class="h3 text-center hidden"></div>
                             <div class="input-field col m6 s12 wow fadeIn a2" data-wow-delay="0.2s">
                                 <label for="name" class="h4">Full Name *</label>
-                                <input type="text" class="form-control validate" id="name" required
+                                <input type="text" class="form-control validate" name="name" required
                                     data-error="NEW ERROR MESSAGE">
                             </div>
                             <div class="input-field col m6 s12 wow fadeIn a4" data-wow-delay="0.4s">
                                 <label for="email" class="h4">Email *</label>
-                                <input type="email" class="form-control validate" id="email" required>
+                                <input type="email" class="form-control validate" name="email" required>
                             </div>
                             <div class="input-field col m12 s12 wow fadeIn a3" data-wow-delay="0.3s">
                                 <label for="last_name" class="h4">Subject *</label>
-                                <input type="text" class="form-control validate" id="last_name" required>
+                                <input type="text" class="form-control validate" name="subject" required>
                             </div>
                             <div class="input-field col m12 s12 wow fadeIn a6" data-wow-delay="0.6s">
                                 <label for="message" class="h4 ">Message *</label>
-                                <textarea id="message" class="form-control materialize-textarea validate"
+                                <textarea name="message" class="form-control materialize-textarea validate"
                                     required></textarea>
                             </div>
-                            <button type="submit" id="form-submit" class="btn btn-success waves-effect wow fadeIn a7"
+                            <button type="submit" class="btn btn-success waves-effect wow fadeIn a7"
                                 data-wow-delay="0.7s">Submit</button>
 
                         </form>
